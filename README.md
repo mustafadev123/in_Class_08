@@ -40,7 +40,7 @@ The existing generated SDK constraint and project settings were retained. Depend
 - Names are trimmed and must be nonempty.
 - Ages use `int.tryParse()` and must be integers from 0 through 130.
 - No records are seeded automatically.
-- The generated counter app and obsolete dog example were removed.
+
 
 ## Manual verification matrix
 
@@ -61,14 +61,9 @@ The tests were completed during an Android mobile run. River record A had genera
 | T6f | Add Acorn, age 0. | Accepted with a distinct generated ID; count 2. | Accepted with a distinct generated ID; count 2. | Pass |
 | T6g | Add Oak, age 130. | Accepted with a distinct generated ID; final count 3. | Accepted with a distinct generated ID; final count 3. | Pass |
 
-## Evidence
 
-The required screenshots were captured during the manual mobile run. Include them in the source archive using these filenames:
 
-- `evidence/T4_before.png` — roster before stopping the app.
-- `evidence/T4_after.png` — the same roster after force-stop and relaunch.
-- `evidence/T6_invalid.png` — one rejected validation attempt.
-
+The required screenshots were captured during the manual mobile run. 
 ### T4 restart method
 
 I stopped the app, force-stopped it through Android App Info, and reopened the same installation without clearing storage or uninstalling it.
